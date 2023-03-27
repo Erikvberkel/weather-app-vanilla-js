@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #4c42f7, #5a9efa);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.container {
+    height: 90%;
+    aspect-ratio: 10/15;
+    background-image: url('./Media/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+
+.current {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.current-city {
+    visibility: hidden;
+    font-size: 2rem;
+}
+
+.current-city.show {
+    visibility: visible;
+}
+
+.current-temperature {
+    font-size: 3rem;
+}
+
+.forecast {
+    height: 50%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.forecast table {
+    width: 100%;
+    color: rgba(250, 250, 250, .75);
+    font-weight: 100;
+}
+
+
+.forecast table th {
+    font-weight: inherit;
+    border-bottom: 1px solid;
+}
+
+.forecast table td img {
+    width: 35%;
+}
+
+.search-img {
+    background: none;
+    border: none;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    cursor: pointer;
+}
+
+.search-form {
+    position: absolute;
+    font-family: inherit;
+    margin-left: 50%;
+    transform: translate(-50%);
+    border-radius: 1rem;
+    margin-top: -4rem;
+    opacity: 0;
+}
+
+.search-form.show {
+    opacity: 1;
+    margin-top: 2.5rem;
+    transition: margin-top .2s, opacity .2s;
+}
+
+.input-field {
+    display: flex;
+}
+
+.search-form input {
+    height: 2rem;
+    border-bottom-left-radius: 100rem;
+    border-top-left-radius: 100rem;
+    border: none;
+    padding-left: .5rem;
+}
+
+.search-form input:focus, button:focus {
+    outline: none;
+}
+
+.search-form button {
+    background-color: white;
+    border: none;
+    border-top-right-radius: 100rem;
+    border-bottom-right-radius: 100rem;
+    border-left: 1px solid rgba(0, 0, 0, .5);
+    padding-left: .5rem;
+    padding-right: 1rem;
+    cursor: pointer;
+}
+
+.error-message {
+    color: red;
+    font-size: .8rem;
+    margin-top: .5rem;
+}
+
+.linkback {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.linkback img {
+    width: 3rem;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="container">
+        <button class="search-img" id="search-img"><img src='./Media/icons8-search-30.png' /></button>
+        <form class="search-form show" id="search-form">
+            <div class="input-field">
+                <input  type="text" id="search-input" placeholder="Zoek naar een stad...">
+                <button type="submit">GO</i></button> 
+            </div>              
+            <p id="error-message" class="error-message"><p>     
+        </form>
+    
+        <div class="current">
+            <p class="current-city" id="current-city"></p>
+            <p class="current-temperature" id="current-temperature"></p>
+            <p id="current-status"></p>
+        </div>
+        <div class="forecast" id="forecast">
+            
+        </div>
+        <div class="linkback">
+            <a href="https://www.weatherapi.com/" title="Free Weather API" target="_blank"><img src='//cdn.weatherapi.com/v4/images/weatherapi_logo.png' alt="Weather data by WeatherAPI.com"></a>
+        </div>
+    </div>
+</body>
+</html>
